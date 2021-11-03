@@ -4,12 +4,12 @@ import './App.css';
 
 function App() {
 
-  const [flowers, setflowers] = useState([])
+  const [flowers, setFlowers] = useState([])
 
   useEffect(() => {
       fetch('http://localhost:3000/flowers')
       .then(res => res.json())
-      .then(flowers => console.log('flowers', flowers))
+      .then(apiFlowers => setFlowers(apiFlowers))
   });
   return (
     <div>
