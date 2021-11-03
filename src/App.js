@@ -1,7 +1,10 @@
+import { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  useEffect();
   return (
     <div>
       <h1>Divine Floral</h1>
