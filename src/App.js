@@ -4,7 +4,11 @@ import './App.css';
 
 function App() {
 
-  useEffect();
+  useEffect(() => {
+      fetch('http://localhost:300/flowers')
+      .then(res => res.json())
+      .then(flowers => console.log('flowers', flowers))
+  });
   return (
     <div>
       <h1>Divine Floral</h1>
