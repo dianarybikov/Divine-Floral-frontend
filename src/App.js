@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
-import logo from './logo.svg';
+import { useState ,useEffect } from 'react';
+// import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const [flowers, setflowers] = useState([])
 
   useEffect(() => {
       fetch('http://localhost:3000/flowers')
