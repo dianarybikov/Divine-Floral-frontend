@@ -1,9 +1,8 @@
 export default function Flower({flower}) {
- return (_
+ return (
     <div className="flower-card">
         <h2>{flower.name}</h2>
-        <p>cost: {flower.cost}</p>
-        
+        <p>cost: {flower.cost}</p> 
     </div>
     )
 }
