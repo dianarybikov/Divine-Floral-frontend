@@ -1,6 +1,6 @@
 import { useState ,useEffect } from 'react';
 import FlowersContainer from './FlowersContainer'
-import FlowerCard from './FlowerCard'
+
 import './App.css';
 
 function App() {
@@ -18,8 +18,8 @@ function App() {
   return (
     <div className="App">
     <FlowersContainer flowers={flowers}/>
-    {/* <FlowerCard flower={flower}/> */}
-      </div>
+
+    </div>
   );
 }
 
